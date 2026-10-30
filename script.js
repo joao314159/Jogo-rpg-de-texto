@@ -212,10 +212,10 @@ function rodar_turno_lobo(fim_combate,jogada){
                     atualiza_texto_combate("Você dá um soco no lobo. Lobo parece furioso. Lobo ataca." + Combate.vida_criatura);
                 }
                 else if (Coisas.madeira > 0){
-                    atualiza_texto_combate("Você acerca Lobo com um galho. Lobo parece furioso. Lobo ataca." + Combate.vida_criatura);
+                    atualiza_texto_combate("Você acerta Lobo com um galho. Lobo parece furioso. Lobo ataca." + Combate.vida_criatura);
                 }
                 else if (Coisas.pedra > 0){
-                    atualiza_texto_combate("Você acerca Lobo com uma pedra. Lobo parece furioso. Lobo ataca." + Combate.vida_criatura);
+                    atualiza_texto_combate("Você acerta Lobo com uma pedra. Lobo parece furioso. Lobo ataca." + Combate.vida_criatura);
                 }
             }
             else{
@@ -223,10 +223,10 @@ function rodar_turno_lobo(fim_combate,jogada){
                     atualiza_texto_combate("Você dá um soco no lobo. Lobo parece furioso. Lobo ataca.");
                 }
                 else if (Coisas.madeira > 0){
-                    atualiza_texto_combate("Você acerca Lobo com um galho. Lobo parece furioso. Lobo ataca.");
+                    atualiza_texto_combate("Você acerta Lobo com um galho. Lobo parece furioso. Lobo ataca.");
                 }
                 else if (Coisas.pedra > 0){
-                    atualiza_texto_combate("Você acerca Lobo com uma pedra. Lobo parece furioso. Lobo ataca.");
+                    atualiza_texto_combate("Você acerta Lobo com uma pedra. Lobo parece furioso. Lobo ataca.");
                 }
 
             }
@@ -394,10 +394,10 @@ function rodar_turno_urso(fim_combate, jogada){
                     atualiza_texto_combate("Você dá um soco no urso. Atacar desarmado o urso não parece uma boa ideia." + Combate.vida_criatura);
                 }
                 else if (Coisas.madeira > 0){
-                    atualiza_texto_combate("Você acerca Urso com um galho. Urso parece furioso. Urso ataca." + Combate.vida_criatura);
+                    atualiza_texto_combate("Você acerta Urso com um galho. Urso parece furioso. Urso ataca." + Combate.vida_criatura);
                 }
                 else if (Coisas.pedra > 0){
-                    atualiza_texto_combate("Você acerca Urso com uma pedra. Urso parece furioso. Urso ataca." + Combate.vida_criatura);
+                    atualiza_texto_combate("Você acerta Urso com uma pedra. Urso parece furioso. Urso ataca." + Combate.vida_criatura);
                 }
             }
             else{
@@ -405,10 +405,10 @@ function rodar_turno_urso(fim_combate, jogada){
                     atualiza_texto_combate("Você dá um soco no urso. Atacar desarmado o urso não parece uma boa ideia.");
                 }
                 else if (Coisas.madeira > 0){
-                    atualiza_texto_combate("Você acerca Urso com um galho. Urso parece furioso. Urso ataca.");
+                    atualiza_texto_combate("Você acerta Urso com um galho. Urso parece furioso. Urso ataca.");
                 }
                 else if (Coisas.pedra > 0){
-                    atualiza_texto_combate("Você acerca Urso com uma pedra. Urso parece furioso. Urso ataca.");
+                    atualiza_texto_combate("Você acerta Urso com uma pedra. Urso parece furioso. Urso ataca.");
                 }
             }
             

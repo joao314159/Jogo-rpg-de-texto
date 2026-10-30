@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo</title>
+    <link rel = "stylesheet" href = "style.css">
+
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body onload = "carregar()">
+    
+    <div class = "container-gigante">
+        <div class = "container-grande" id = "tela1">
+
+            <div class = "container-menor1" id = "tela_grande_texto">
+                <div class = "tela-do-texto" id = "texto">
+                    texto atual
+                </div>
+                <div class = "container-botoes">
+                    <button class = "botao" id = "action" onclick = "acao()" style = "display:none;">ação</button>
+                    <button class = "botao" id ="avancar" onclick = "avancar()">avançar</button>
+                </div>
+            </div>
+
+            
+            <div class = "container-menor1" id = "tela_grande_action" style = "display:none; overflow: auto;">
+                <div id = "coletar_recursos_button">
+
+                    <button class = "botao" onclick = "coletar_recursos()">Coletar recursos</button>
+                    <span> Custo: 1 hora</span>
+                </div>
+                    
+                <br>
+
+                <div id = "comer_fruta"  style = "display:none;">
+                    <button class = "botao" onclick = "apertou_comer_fruta()">Comer fruta</button>
+                    <span>Custo: 0 hora, 1 fruta</span>
+                </div>
+                    
+                <br>
+
+                <div id = "comer_cogumelo"  style = "display:none;">
+                    <button class = "botao" onclick = "apertou_comer_cogumelo()">Comer cogumelo</button>
+                    <span>Custo: 0 hora, 1 cogumelo</span>
+                </div>
+                    
+                <br>
+
+                <div id = "comer_carne"  style = "display:none;">
+                    <button class = "botao" onclick = "apertou_comer_carne()">Comer carne</button>
+                    <span>Custo: 0 hora, 1 carne</span>
+                </div>
+                    
+                <br>
+
+                <div id = "comer_migalha_gigante" style = "display:none;">
+                    <button class = "botao" onclick = "apertou_comer_migalha_gigante()">Comer migalha gigante</button>
+                    <span>Custo: 0 hora, 1 migalha gigante</span>
+                </div>
+
+                <br>
+
+                <div  id = "fazer_fogueira" style = "display:none;" >
+                    <button class = "botao" onclick = "apertou_fazer_fogueira()">Fazer fogueira</button>
+                    <span>Custo: 1 hora, 2 madeiras, 1 carvão</span>
+                </div>
+
+                <br>
+
+                <div  id = "ignorar_prisioneiro" style = "display:none;" >
+                    <button class = "botao2" onclick = "apertou_botao_ignorar_prisioneiro()">Ignorar prisioneiro</button>
+                </div>
+
+                <br>
+
+                <div id ="forcar_abertura_da_porta_com_faca" style = "display:none;">
+                    <button class = "botao2" onclick = "apertou_botao_forcar_abertura_da_porta_com_faca()">Forçar porta com faca</button>
+                </div>
+
+
+                <br>
+                
+                <div style=" position: relative; bottom:0.2%; left:0.2% ">
+                    <button class = "botao" onclick = "apertou_botao_voltar_tela_principal()">Voltar</button>
+                </div>
+                
+            </div>
+
+
+            <div class = "container-menor1" id = "tela_grande_combate" style = display:none;>
+                
+                <div id = "tela_combate_lobo" style = "display:none;">
+                    <div>
+                        <figure>
+                            <img src = "imagens/lobo.jpg" alt = "Imagem lobo">
+                        </figure>
+                        <p id = "texto_combate_lobo" style = "font-size: x-large; text-align: left;"> Um lobo selvagem se aproxima! </p>
+                    </div>
+                    <div>
+                        <button class = "botao" onclick = "apertou_botao_atacar_lobo()">Atacar</button>
+                        <button class = "botao" onclick = "apertou_botao_fugir_lobo('fim do combate')">Fugir</button>
+                        <button class = "botao" style = "display:none;" id = "jogar_carne_button" onclick = "apertou_botao_jogar_carne()">Dar carne</button>                       
+
+                    </div>
+                </div>
+
+
+                <div id = "tela_combate_urso" style = "display:none;">
+                    <div>
+                        <figure>
+                            <img src = "imagens/urso.jpg" alt = "Imagem urso">
+                        </figure>
+                        <p id = "texto_combate_urso" style = "font-size: x-large; text-align: left;"> Um urso selvagem se aproxima! </p>
+                    </div>
+                    <div>
+                        <button class = "botao" onclick = "apertou_botao_atacar_urso()">Atacar</button>
+                        <button class = "botao" onclick = "apertou_botao_fugir_urso()">Fugir</button>
+                    </div>
+                </div>
+
+
+             
+                
+
+            </div>
+
+            <div class = "container-menor2">
+                <div class = "item" id = "vida">Vida: vida atual</div>
+                <div class = "item" id = "fome">Fome: fome atual</div>
+                <div class = "item" id = "sede">Sede: sede atual</div>
+                <div class = "item" id = "tempo">Tempo: tempo atual</div>
+                <div class = "item" id = "fogueira" style = "display:none;">Duração da fogueira: 6  </div>
+
+                <div style = "margin:10%; display:none;" id = "coisas" >
+                    
+
+                </div>
+              
+            </div>
+
+           
+
+        </div>
+
+        <div id =  "tela_morte" style = "display:none;">
+            <p style = "color:red; font-size: 300px;">MORREU</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
